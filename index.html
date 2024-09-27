@@ -3,10 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Web Page</title>
+    <title>PlayStation Coming Soon</title>
+    <style>
+      /* Import PlayStation-like font */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+      /* Global styles */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #003087; /* PlayStation blue */
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 4em;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5em;
+        color: #dcdcdc;
+        text-align: center;
+      }
+
+      /* Centered banner */
+      .coming-soon {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Slightly transparent white */
+        padding: 50px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* PlayStation-like shadow */
+        backdrop-filter: blur(10px); /* Frosted glass effect */
+      }
+
+      /* Styling the "Coming Soon" text */
+      .coming-soon h1 {
+        font-size: 5em;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+
+      .coming-soon p {
+        font-size: 1.2em;
+        color: #a9a9a9;
+      }
+
+      /* PlayStation button-like shapes for aesthetic */
+      .shapes {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+      }
+
+      .shape {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+      }
+
+      .circle {
+        border-radius: 50%;
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 43px solid #fff;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple web page deployed on Coolify.</p>
+    <!-- PlayStation Icon Shapes -->
+    <div class="shapes">
+      <div class="shape circle">O</div>
+      <div class="shape triangle"></div>
+      <div class="shape">□</div>
+      <div class="shape">△</div>
+    </div>
+
+    <!-- Coming Soon Banner -->
+    <div class="coming-soon">
+      <h1>Coming Soon</h1>
+      <p>Your next gaming experience awaits</p>
+    </div>
   </body>
 </html>
